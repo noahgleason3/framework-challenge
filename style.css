@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&display=swap');
+
+@font-face {
+  font-family: "StarWarsBold";
+  src: url("fonts/writing.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #e50914;
+  --secondary-color: #1a0000;
+  --background-color: #000;
+  --text-color: #fff;
+  --accent-color: #ff3333;
+  --font-family: 'Orbitron', 'Rajdhani', 'Helvetica Neue', Arial, sans-serif;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  line-height: 1.6;
+  background-image: url("images/redStarwars.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+header {
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 3rem 1rem;
+}
+
+header h1 {
+    color: rgb(255, 1, 90);
+    font-family: "StarWarsBold", var(--font-family);
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+
+main {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+section {
+  margin: 3rem 0;
+}
+
+#intro img {
+  max-width: 400px;
+  width: 80%;
+  height: auto;
+  margin: 1.5rem 0;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+
+button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+  transform: scale(1.05);
+}
+
+
+footer {
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #222;
+}
+
+
+@keyframes glow {
+    from { text-shadow: 0 0 5px var(--accent-color); }
+    to { text-shadow: 0 0 20px var(--accent-color); }
+}
